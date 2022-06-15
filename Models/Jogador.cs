@@ -1,8 +1,12 @@
 public class Jogador
 {
     private string nome;
+    private string posicao;
 
     private int idade;
+    private double altura;
+    private double peso;
+    private Boolean titular;
 
     public Jogador()
     {

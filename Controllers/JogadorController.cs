@@ -25,5 +25,13 @@ namespace atividadePraticaSemanaCinco.Controllers
 
             return novaJogador.getNome();
         }
+         [HttpPost]
+        public string Post(string nome, int idade)
+        {
+            Jogador novaJogador = new Jogador(nome, idade);
+            
+            return novaJogador.getNome() + " - " + novaJogador.getIdade();
+        }
     }
+    
 }
